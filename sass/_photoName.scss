@@ -1,0 +1,19 @@
+.photoName{
+    padding: 25px;
+    figure{
+        text-align: center;
+        *{
+            display: block;
+        }
+        img{
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 3px rgba(18, 18, 18, 0.5);
+            width: 400px;
+            height: 400px;
+        }
+        figcapture{
+            display: inline-block;
+        }
+    }
+}

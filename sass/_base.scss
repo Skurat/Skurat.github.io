@@ -1,0 +1,28 @@
+html, body{
+    font-family: Comic sans-serif;
+}
+ul{
+    padding: 0;
+    margin: 0;    
+}
+li{
+    list-style-type: none;
+}
+.content{
+    &>div{
+        min-height: 95vh;
+        border: 1px solid black;
+        text-align: center;
+        span{
+            display: inline-block;
+        }
+    }
+}
+.headText{
+    border-bottom: 3px solid #333;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
