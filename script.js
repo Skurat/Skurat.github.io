@@ -19,5 +19,5 @@ request.send();
                 link.setAttribute('href', incl.css[i]);
                 document.head.append(link);
             }
-        
-    }};
+        }
+    };
