@@ -2,7 +2,6 @@ var request = new XMLHttpRequest();
 request.open('GET', 'include.json');
 request.send();
 
-setTimeout(function(){
     request.onreadystatechange = function(){
     if(request.readyState != 4){return;}
     if(request.status != 200){alert(request.status)}
@@ -22,4 +21,3 @@ setTimeout(function(){
             }
         
     }};
-}, 100);
