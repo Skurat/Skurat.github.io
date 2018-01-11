@@ -1,3 +1,6 @@
 $(document).ready(function(){
-    //alert();
+    alert();
+    $('a').click(function(){
+        alert();
+    });
 });

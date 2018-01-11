@@ -1,5 +1,8 @@
 html, body{
     font-family: Comic sans-serif;
+    font-size: 100.01%;
+    width: 100%;
+    
 }
 ul{
     padding: 0;
@@ -11,7 +14,6 @@ li{
 .content{
     &>div{
         min-height: 95vh;
-        border: 1px solid black;
         text-align: center;
         span{
             display: inline-block;

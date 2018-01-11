@@ -1,5 +1,7 @@
 html, body {
-  font-family: Comic sans-serif; }
+  font-family: Comic sans-serif;
+  font-size: 100.01%;
+  width: 100%; }
 
 ul {
   padding: 0;
@@ -10,7 +12,6 @@ li {
 
 .content > div {
   min-height: 95vh;
-  border: 1px solid black;
   text-align: center; }
   .content > div span {
     display: inline-block; }
@@ -27,38 +28,6 @@ header {
   padding: 0;
   margin: 0 !important;
   border-radius: 0 !important; }
-
-.projects .projItems {
-  margin-top: 15px;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap; }
-  .projects .projItems a {
-    position: absolute;
-    color: #333;
-    top: 30%;
-    box-shadow: 0 0 5px 3px rgba(51, 51, 51, 0.5);
-    font-size: 1.5em;
-    font-weight: bold;
-    border-radius: 50%;
-    text-decoration: none; }
-    .projects .projItems a:hover {
-      box-shadow: 0 0 4px 2px rgba(51, 51, 51, 0.5); }
-    .projects .projItems a:active {
-      transform: scale(0.9);
-      box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.5); }
-  .projects .projItems a[href="#left"] {
-    left: 15px;
-    padding: 10px 25px 10px 5px; }
-  .projects .projItems a[href="#right"] {
-    right: 15px;
-    padding: 10px 5px 10px 25px; }
-  .projects .projItems li {
-    display: inline-block;
-    width: 33%; }
 
 .photoName {
   padding: 25px; }
@@ -80,5 +49,130 @@ header {
   text-align: center; }
   .about span {
     display: inline-block; }
+
+.projects .projItems {
+  margin-top: 15px;
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap; }
+  .projects .projItems a {
+    position: absolute;
+    color: #333;
+    top: 30%;
+    box-shadow: 0 0 5px 3px rgba(51, 51, 51, 0.5);
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 50%;
+    text-decoration: none; }
+    .projects .projItems a:hover {
+      box-shadow: 0 0 4px 2px rgba(64, 64, 64, 0.2); }
+    .projects .projItems a:active {
+      box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.5); }
+  .projects .projItems a[href="#left"] {
+    left: 15px;
+    padding: 10px 25px 10px 5px; }
+  .projects .projItems a[href="#right"] {
+    right: 15px;
+    padding: 10px 5px 10px 25px; }
+  .projects .projItems li {
+    display: inline-block;
+    width: 33%; }
+.projects .projInfo {
+  border: 1px solid black;
+  padding: 15px;
+  padding-top: 20px; }
+  .projects .projInfo .projInner {
+    position: relative;
+    background-color: rgba(64, 64, 64, 0.2);
+    height: 25vh; }
+    .projects .projInfo .projInner:before {
+      top: -20px;
+      left: 50%;
+      content: "";
+      position: absolute;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-bottom: 20px solid rgba(64, 64, 64, 0.2); }
+
+.tools div.lang, .tools div.other {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+  height: 75vh; }
+  .tools div.lang div, .tools div.other div {
+    background-color: rgba(129, 129, 129, 0.18);
+    grid-template-rows: 75vh; }
+    .tools div.lang div ul li, .tools div.other div ul li {
+      text-transform: uppercase;
+      padding: 15px;
+      text-align: left;
+      cursor: pointer;
+      transition: all .3s; }
+      .tools div.lang div ul li:hover, .tools div.other div ul li:hover {
+        background-color: rgba(123, 122, 122, 0.3);
+        transition: all .3s; }
+      .tools div.lang div ul li:active, .tools div.other div ul li:active {
+        background-color: rgba(123, 122, 122, 0.2);
+        transition: all .3s; }
+  .tools div.lang .halfInfo, .tools div.other .halfInfo {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    top: 0; }
+    .tools div.lang .halfInfo img, .tools div.other .halfInfo img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+    .tools div.lang .halfInfo div.langInfo, .tools div.lang .halfInfo div.otherInfo, .tools div.other .halfInfo div.langInfo, .tools div.other .halfInfo div.otherInfo {
+      width: 100%;
+      height: 100%; }
+
+footer {
+  border-radius: 0 !important; }
+  footer .footer {
+    padding-top: 15px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+    footer .footer div .headFooter {
+      display: block;
+      font-weight: bold;
+      padding-left: 5px;
+      padding: 10px;
+      width: 100%;
+      font-size: 1.2rem; }
+    footer .footer div ul li {
+      position: relative;
+      cursor: pointer;
+      transition: all .3s;
+      overflow: hidden; }
+      footer .footer div ul li i {
+        position: absolute;
+        left: 15px;
+        top: 15px; }
+      footer .footer div ul li a {
+        display: block;
+        padding: 10px 15px 10px 50px;
+        width: 100%;
+        color: #333;
+        text-decoration: none; }
+      footer .footer div ul li:hover {
+        border-right: 5px solid #404040;
+        background-color: rgba(64, 64, 64, 0.2);
+        border-radius: 5px 0 0 5px;
+        font-weight: bold;
+        transition: all .3s; }
+      footer .footer div ul li:active {
+        background-color: rgba(51, 51, 51, 0.5); }
+      footer .footer div ul li:hover a {
+        transform: translateX(15px);
+        transition: all .3s; }
+      footer .footer div ul li:hover i {
+        transform: scale(1.3);
+        transition: all .3s; }
 
 /*# sourceMappingURL=style.css.map */
