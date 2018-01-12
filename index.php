@@ -17,6 +17,7 @@
        
    </header>
    <!-- BEGIN CONTENT -->
+    <?php echo "<h1>Here</h1>"; ?>
     <div class="content">
        <!--+++++++++++++++++ BEGIN PHOTONAME +++++++++++++++++-->
         <div class="photoName">
