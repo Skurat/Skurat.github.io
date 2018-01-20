@@ -6,6 +6,7 @@
         display: block;
         overflow: hidden;
         white-space: nowrap;
+        text-align: center;
         a{
             position: absolute;
             color: #333;
@@ -24,29 +25,97 @@
             }
         }
         a[href="#left"]{
+            z-index: 2;
             left: 15px;
             padding: 10px 25px 10px 5px;
         }
         a[href="#right"]{
+            z-index: 2;
             right: 15px;
             padding: 10px 5px 10px 25px;
         }
-        li{
+        @keyframes showProjMain{
+            from{
+                opacity: 0;
+            }to{
+                opacity: 1;
+            }
+        }
+        @keyframes showProj{
+            from{
+                opacity: 0;
+            }to{
+                opacity: 0.5;
+            }
+        }
+        .projInner{
+            position: relative;
             display: inline-block;
-            width: 33%;
+            padding: 7px;
+            li{
+                display: inline-block;
+                box-shadow: 0 0 5px 2px rgba(1, 1, 1, 0.51);
+            }
+            li.projMain{
+                    width: 500px;
+                    height: 300px;
+                img{
+                    animation: showProjMain 1s;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @media (max-width: 500px){
+                li.projLeft, li.projRight{
+                    animation: showProj 1s;
+                    position: absolute;
+                    top: 5%;
+                    z-index: -1;
+                    img{
+                        width: 250px;
+                    }
+                }
+            }
+            @media (min-width: 501px){
+                li.projLeft, li.projRight{
+                    position: absolute;
+                    top: 5%;
+                    z-index: -1;
+                    opacity: .5;
+                    width: 400px;
+                    height: 250px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+            li.projLeft{
+                left: -110%;
+                
+            }
+            li.projRight{
+                right: -110%;
+            }
         }
     }
     .projInfo{
-        border: 1px solid black;
+//        border: 1px solid black;
         padding: 15px;
         padding-top: 20px;
+        text-align: left;
         .projInner{
             position: relative;
             background-color: rgba(64, 64, 64, 0.2);
-            height: 25vh;
+            min-height: 25vh;
+            padding: 15px;
+            center{
+                font-weight: bold;
+            }
             &:before{
                 top: -20px;
-                left: 50%;
+                left: 48%;
                 content: "";
                 position: absolute;
                 border-right: 20px solid transparent;
