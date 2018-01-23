@@ -9,8 +9,9 @@
             margin: 0 auto;
             border-radius: 50%;
             box-shadow: 0 0 5px 3px rgba(18, 18, 18, 0.5);
-            width: 400px;
-            height: 400px;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
         }
         figcapture{
             display: inline-block;

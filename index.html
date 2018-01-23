@@ -13,26 +13,42 @@
     <!-- END LINK -->
 </head>
 <body>
-   <header class="navbar navbar-inverse">
+  
+   <header class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+      <a class="navbar-brand fa fa-image fa-lg" href="#photoName"></a>
+    </div>
+         <button class="navbar-toggler btn btn-link" type="button" data-toggle="collapse" data-target="#links">
+        <span class="fa fa-bars fa-lg"></span>
+      </button>
+          <ul id="links" class="nav navbar-nav navbar-right collapse">
+               <li><a href="#photoName">Главная</a></li>
+               <li><a href="#about">Обо мне</a></li>
+               <li><a href="#projects">Проекты</a></li>
+               <li><a href="#tools">Инструменты</a></li>
+               <li><a href="#fLinks">Ссылки</a></li>
+           </ul>    
+      </div>
        
    </header>
    <!-- BEGIN CONTENT -->
     <div class="content">
        <!--+++++++++++++++++ BEGIN PHOTONAME +++++++++++++++++-->
-        <div class="photoName">
+        <div class="photoName" id="photoName">
             <figure>
-                <img src="https://scontent.fiev10-1.fna.fbcdn.net/v/t34.0-12/20840230_343619612747281_695892002_n.jpg?oh=c68570112b6595e6664f12e8f439221c&oe=5A57A826" alt="">
+                <img src="/images/admin/photo.png" alt="">
                 <figcapture class="headText">Skuratovskiy Eugene</figcapture>
             </figure>
         </div>
         <!--+++++++++++++++++ END PHOTONAME +++++++++++++++++-->
         <!--+++++++++++++++++ BEGIN ABOUT +++++++++++++++++-->
-        <div class="about">
+        <div class="about" id="about">
             <div><span class="headText">About me</span></div>
         </div>
         <!--+++++++++++++++++ END ABOUT +++++++++++++++++-->
         <!--+++++++++++++++++ BEGIN PROJECTS +++++++++++++++++-->
-        <div class="projects">
+        <div class="projects" id="projects">
             <div><span class="headText">Projects</span></div>
                 <ul class="projItems">
                   
@@ -60,7 +76,7 @@
                 </ul>
                 <div class="projInfo">
                     <div class="projInner">
-                        <center class="projName"><a href="#">Empty</a></center>
+                        <center class="projName"><a href="#"></a></center>
                         <ul class="projList">
                            <li class="tag"><b>Tag:</b> <span></span></li>
                             <li class="myWork"><b>My work:</b> <span></span></li>
@@ -72,7 +88,7 @@
             </div>
             <!--+++++++++++++++++END PROJECTS +++++++++++++++++-->
             <!--+++++++++++++++++ BEGIN TOOLS +++++++++++++++++-->
-            <div class="tools">
+            <div class="tools" id="tools">
                 <div><span class="headText">Tools</span></div>
                 <div class="lang">
                     <div class="halfList">
@@ -113,7 +129,7 @@
         </div>
         <!-- END CONTENT -->
     
-    <footer class="navbar navbar-default">
+    <footer class="navbar navbar-default" id="fLinks">
         <div class="footer">
             <div class="social">
                <span class="headFooter">Social</span>
@@ -142,7 +158,8 @@
     <!-- BEGIN SCRIPT -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="jq.js"></script>
+    <script src="https://use.fontawesome.com/95a63793e2.js"></script>
+    <script src="/scripts/jq.js"></script>
     <!-- END SCRIPT -->
 </body>
 </html>
