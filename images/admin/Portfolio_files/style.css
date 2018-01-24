@@ -197,7 +197,7 @@ header {
     overflow: hidden;
     left: 0;
     top: 0; }
-    .tools div.lang .halfInfo > img, .tools div.other .halfInfo > img {
+    .tools div.lang .halfInfo img, .tools div.other .halfInfo img {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -205,10 +205,11 @@ header {
       left: 0; }
     .tools div.lang .halfInfo div.langInfo, .tools div.lang .halfInfo div.otherInfo, .tools div.other .halfInfo div.langInfo, .tools div.other .halfInfo div.otherInfo {
       width: 100%;
-      height: 100%;
-      padding: 15px; }
-      .tools div.lang .halfInfo div.langInfo *, .tools div.lang .halfInfo div.otherInfo *, .tools div.other .halfInfo div.langInfo *, .tools div.other .halfInfo div.otherInfo * {
-        background-color: none; }
+      height: 100%; }
+      .tools div.lang .halfInfo div.langInfo pre, .tools div.lang .halfInfo div.otherInfo pre, .tools div.other .halfInfo div.langInfo pre, .tools div.other .halfInfo div.otherInfo pre {
+        background-color: transparent;
+        border: none;
+        outline: none; }
 
 footer {
   border-radius: 0 !important; }
