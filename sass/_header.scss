@@ -5,6 +5,9 @@ header{
     @media (min-width: 771px){
         ul#links{
             display: inline-block;
+            & li:hover a{
+                text-decoration: underline;
+            }
         }
     }
     button.btn{

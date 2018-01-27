@@ -34,7 +34,9 @@ header {
   border-radius: 0 !important; }
   @media (min-width: 771px) {
     header ul#links {
-      display: inline-block; } }
+      display: inline-block; }
+      header ul#links li:hover a {
+        text-decoration: underline; } }
   header button.btn {
     position: absolute;
     right: 0;
@@ -68,12 +70,29 @@ header {
       height: auto; }
     .photoName figure figcapture {
       display: inline-block; }
+    .photoName figure span {
+      display: block;
+      margin-top: 15px; }
 
 .about {
   background-color: #e2e2e2;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 75px;
+  position: relative; }
   .about span {
     display: inline-block; }
+  .about p {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem; }
+  .about .feedback {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    left: 0; }
+    .about .feedback button {
+      position: relative;
+      font-weight: bold; }
 
 .projects .projItems {
   position: relative;
@@ -171,44 +190,53 @@ header {
       border-left: 20px solid transparent;
       border-bottom: 20px solid rgba(64, 64, 64, 0.2); }
 
+@media (max-width: 599px) {
+  .tools div.other {
+    grid-template-areas: "list" "info"; }
+  .tools div.lang {
+    grid-template-areas: "list" "info"; } }
+@media (min-width: 600px) {
+  .tools div.lang {
+    grid-template-areas: "list info"; }
+  .tools div.other {
+    grid-template-areas: "info list"; } }
 .tools div.lang, .tools div.other {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 15px;
-  height: 75vh; }
-  .tools div.lang div, .tools div.other div {
+  margin-top: 10px; }
+  .tools div.lang .halfList, .tools div.other .halfList {
+    grid-area: list;
     background-color: rgba(129, 129, 129, 0.18);
-    grid-template-rows: 75vh; }
-    .tools div.lang div ul li, .tools div.other div ul li {
+    height: 75vh; }
+    .tools div.lang .halfList ul li, .tools div.other .halfList ul li {
       text-transform: uppercase;
       padding: 15px;
       text-align: left;
       cursor: pointer;
       transition: all .3s; }
-      .tools div.lang div ul li:hover, .tools div.other div ul li:hover {
+      .tools div.lang .halfList ul li:hover, .tools div.other .halfList ul li:hover {
         background-color: rgba(123, 122, 122, 0.3);
         transition: all .3s; }
-      .tools div.lang div ul li:active, .tools div.other div ul li:active {
-        background-color: rgba(123, 122, 122, 0.2);
+      .tools div.lang .halfList ul li:active, .tools div.other .halfList ul li:active {
+        background-color: rgba(123, 122, 122, 0.155);
         transition: all .3s; }
   .tools div.lang .halfInfo, .tools div.other .halfInfo {
+    grid-area: info;
+    height: 75vh;
+    background-color: rgba(129, 129, 129, 0.18);
     position: relative;
     text-align: left;
-    overflow: hidden;
-    left: 0;
-    top: 0; }
+    overflow-y: auto; }
     .tools div.lang .halfInfo > img, .tools div.other .halfInfo > img {
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0; }
-    .tools div.lang .halfInfo div.langInfo, .tools div.lang .halfInfo div.otherInfo, .tools div.other .halfInfo div.langInfo, .tools div.other .halfInfo div.otherInfo {
+    .tools div.lang .halfInfo div.languageInfo, .tools div.lang .halfInfo div.otherInfo, .tools div.other .halfInfo div.languageInfo, .tools div.other .halfInfo div.otherInfo {
       width: 100%;
       height: 100%;
       padding: 15px; }
-      .tools div.lang .halfInfo div.langInfo *, .tools div.lang .halfInfo div.otherInfo *, .tools div.other .halfInfo div.langInfo *, .tools div.other .halfInfo div.otherInfo * {
-        background-color: none; }
 
 footer {
   border-radius: 0 !important; }

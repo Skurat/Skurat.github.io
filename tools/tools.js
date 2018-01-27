@@ -14,7 +14,7 @@ $.getJSON('/tools/tools.json', function(data){
             let __mainPrnt = '.' + $(this).parent().parent().parent().attr('class') + ' .halfInfo';
             let __prnt = $(this).parent().attr('id'); /* PARENT ELEMENT */
             let name = $(this).attr('name'); /* NAME OF EVENT TARGET */
-            let __url = '/tools/'+__prnt+'/' + name + '.tmpl'; /* PATH TO TEMPLATE */
+            let __url = '/tools/'+__prnt+'/' + name + '.html'; /* PATH TO TEMPLATE */
             $.get(__url, function(data){
                 let __img = __mainPrnt + ' img';
                 let __info = __mainPrnt + ' .' + __prnt + 'Info';

@@ -1,31 +1,35 @@
 {
     "language": [{
         "name": "html",
-        "templateUrl": "/tools/html.tmpl"
+        "templateUrl": "/tools/html.html"
     },
     {
         "name": "css",
-        "templateUrl": "/tools/css.tmpl"
+        "templateUrl": "/tools/css.html"
     },
     {
         "name": "js",
-        "templateUrl": "/tools/js.tmpl"
+        "templateUrl": "/tools/js.html"
     },
     {
         "name": "php",
-        "templateUrl": "/tools/php.tmpl"
+        "templateUrl": "/tools/php.html"
     },
     {
         "name": "sql",
-        "templateUrl": "/tools/sql.tmpl"
+        "templateUrl": "/tools/sql.html"
     }],
     "other": [{
         "name": "github",
-        "templateUrl": "/tools/github.tmpl"
+        "templateUrl": "/tools/github.html"
     },
     {
         "name": "mysql",
-        "templateUrl": "/tools/mysql.tmpl"
+        "templateUrl": "/tools/mysql.html"
+    },
+    {
+        "name": "yii2",
+        "templateUrl": "/tools/yii2.html"
     }
     ]
 }
